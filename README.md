@@ -6,7 +6,7 @@ npm i regexpjs
 ```
 
 ## Usage
-```
+```javascript
 const {pattern, match} = require('regexpjs');
 console.log(pattern.email('user@domain.com'));
 //-> ["user", "domain.com"]
@@ -16,7 +16,7 @@ console.log(match(/\w+/g, 'hello world'));
 ```
 
 ## API
-```
+```javascript
 pattern.attrs('<img src="https://uznam8x.tistory.com" alt="" />')
 ["src","https://www.domain.com","alt",""]
 
