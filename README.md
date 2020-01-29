@@ -17,6 +17,15 @@ console.log(match(/\w+/g, 'hello world'));
 
 ## API
 ```javascript
+/* 1.0.9 */
+pattern.card('4111111111111111')
+["Visa"]
+// Ouput e.g : [ 'American Express', 'BCGlobal', 'Carte Blanche', 'Diners Club', 'Discover', 'Insta Payment''JCB', 'Korean Local', 'Laser', 'Maestro', 'Master','Solo', 'Switch', 'Union Pay', 'Visa' ]
+
+pattern.fileExt('https://www.domain.com/image/1234.jpg')
+[".jpg"]
+
+/* 1.0.8 */
 pattern.attrs('<img src="https://uznam8x.tistory.com" alt="" />')
 ["src","https://www.domain.com","alt",""]
 
@@ -37,6 +46,9 @@ pattern.letters('hello world')
 
 pattern.mac('AA:BB:CC:DD:EE:FF')
 ["AA","BB","CC","DD","EE","FF"]
+
+pattern.password('aAzZ1!a_')
+["aAzZ1!a_"]
 
 pattern.telephone('01012345678')
 ["010","1234","5678"]

@@ -1,8 +1,18 @@
-module.exports = function(regex, str){
-   let matched = [];
-    let m;
+module.exports = function(regex, str) {
+  let matched = [];
+  let m;
+
+  if (regex.global) {
     while ((m = regex.exec(str)) !== null) {
-        matched = matched.concat(m);
+      matched = matched.concat(m);
     }
-    return matched;
-}
+  } else {
+    if ((m = regex.exec(str)) !== null) {
+      m.forEach((match) => {
+        matched = matched.concat(match);
+      });
+    }
+  }
+
+  return matched;
+};

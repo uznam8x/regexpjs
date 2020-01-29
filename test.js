@@ -42,6 +42,10 @@ let check = [
         value: pattern.letters('hello world'),
     },
     {
+        key: 'card',
+        value: pattern.card('4111111111111111'),
+    },
+    {
         key: 'match',
         value: match(/\w+/g, 'hello world'),
     }

@@ -9,6 +9,8 @@ const pattern = {
   mac: require("./src/pattern/Mac.js"),
   letters: require("./src/pattern/Letters.js"),
   password: require("./src/pattern/Password.js"),
+  fileExt: require("./src/pattern/FileExtension.js"),
+  card: require("./src/pattern/Card.js"),
 };
 const match = require("./src/match");
 
