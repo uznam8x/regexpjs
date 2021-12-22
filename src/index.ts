@@ -1,30 +1,37 @@
-import email from "./pattern/Email.js";
-import telephone from "./pattern/Telephone.js";
-import url from "./pattern/URL.js";
-import currency from "./pattern/Currency.js";
-import ip from "./pattern/IP.js";
-import mac from "./pattern/Mac.js";
-import letters from "./pattern/Letters.js";
-import password from "./pattern/Password.js";
-import fileExt from "./pattern/FileExtension.js";
-import creditCard from "./pattern/CreditCard.js";
+import email from "./pattern/Email";
+import telephone from "./pattern/Telephone";
+import url from "./pattern/URL";
+import currency from "./pattern/Currency";
+import ip from "./pattern/IP";
+import mac from "./pattern/Mac";
+import letters from "./pattern/Letters";
+import password from "./pattern/Password";
+import fileExt from "./pattern/FileExtension";
+import creditCard from "./pattern/CreditCard";
 import htmlAttrs from "./pattern/HtmlAttributes";
+import qs from "./pattern/QS";
+import digit from "./pattern/Digit";
 
-import match from "./match";
+import Match from "./match";
+
+export const match = Match;
+export const pattern = {
+  email,
+  telephone,
+  url,
+  currency,
+  htmlAttrs,
+  ip,
+  mac,
+  letters,
+  password,
+  fileExt,
+  creditCard,
+  qs,
+  digit,
+};
 
 export default {
-  pattern: {
-    email,
-    telephone,
-    url,
-    currency,
-    htmlAttrs,
-    ip,
-    mac,
-    letters,
-    password,
-    fileExt,
-    creditCard,
-  },
+  pattern,
   match,
 };

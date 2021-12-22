@@ -1,8 +1,9 @@
 {
   "name": "regexpjs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "useful regular expression pattern",
-  "main": "dist/index.js",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
     "test": "jest",
     "start": "jest --watch",
@@ -23,7 +24,7 @@
     "email": "uznam8x@gmail.com",
     "url": "https://uznam8x.tistory.com/"
   },
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/uznam8x/regexpjs/issues"
   },

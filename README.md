@@ -17,7 +17,7 @@ console.log(match(/\w+/g, 'hello world'));
 
 ## API
 ```javascript
-/* 1.1.0 */
+/* 1.1.1 */
 pattern.qs('a=1&b=2')
 [["a", 1], ["b", 2]]
 
