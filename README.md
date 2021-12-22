@@ -17,17 +17,23 @@ console.log(match(/\w+/g, 'hello world'));
 
 ## API
 ```javascript
+/* 1.1.0 */
+pattern.qs('a=1&b=2')
+[["a", 1], ["b", 2]]
+
+pattern.digit('a1b2c3')
+[1, 2, 3]
+
+pattern.htmlAttrs('<img src="https://uznam8x.tistory.com" alt="" />')
+["src","https://www.domain.com","alt",""]
+
 /* 1.0.9 */
-pattern.card('4111111111111111')
+pattern.creditCard('4111111111111111')
 ["Visa"]
 // Ouput e.g : [ 'American Express', 'BCGlobal', 'Carte Blanche', 'Diners Club', 'Discover', 'Insta Payment''JCB', 'Korean Local', 'Laser', 'Maestro', 'Master','Solo', 'Switch', 'Union Pay', 'Visa' ]
 
 pattern.fileExt('https://www.domain.com/image/1234.jpg')
 [".jpg"]
-
-/* 1.0.8 */
-pattern.attrs('<img src="https://uznam8x.tistory.com" alt="" />')
-["src","https://www.domain.com","alt",""]
 
 pattern.currency('12345678')
 ["12","345","678"]

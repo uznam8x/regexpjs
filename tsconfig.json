@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "target": "es5",
+    "lib": ["es6", "dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "declaration": true
+  },
+  "include": ["./src"],
+  "exclude": [
+    "**/dist",
+    "**/build",
+    ".history",
+    "node_modules",
+    "**/*.spec.*",
+    "**/*.test.*"
+  ]
+}

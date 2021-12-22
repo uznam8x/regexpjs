@@ -18,3 +18,9 @@ node_modules
 config.gypi
 CVS
 npm-debug.log
+src
+jest.config.js
+rollup.config.js
+tsconfig.json
+yarn.lock
+.quokka
