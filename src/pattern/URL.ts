@@ -1,5 +1,5 @@
 import match from "../match";
-export default function (str: string): string | undefined[] {
+export default function (str: string): (string | undefined)[] {
   const regex =
     /^((\w+):)?\/\/((\w+)?(:(\w+))?@)?([^\/\?:]+)(:(\d+))?(\/?([^\/\?#][^\?#]*)?)?(\?([^#]+))?(#(\w*))?/g;
   const res = match(regex, str);
