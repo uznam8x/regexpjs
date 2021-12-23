@@ -4,7 +4,7 @@ const valid = '<img src="https://uznam8x.tistory.com" alt="" />';
 const invalid = '<img alt=" />';
 
 const correct = (bool = false) => {
-  const res = ["src", "https://uznam8x.tistory.com", "alt", ""];
+  const res = [["src", "https://uznam8x.tistory.com"], ["alt", ""]];
   return bool ? JSON.stringify(res) : res;
 };
 

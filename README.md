@@ -25,7 +25,7 @@ pattern.digit('a1b2c3')
 [1, 2, 3]
 
 pattern.htmlAttrs('<img src="https://uznam8x.tistory.com" alt="" />')
-["src","https://www.domain.com","alt",""]
+[["src","https://www.domain.com"], ["alt",""]]
 
 /* 1.0.9 */
 pattern.creditCard('4111111111111111')
