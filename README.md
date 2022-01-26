@@ -17,6 +17,16 @@ console.log(match(/\w+/g, 'hello world'));
 
 ## API
 ```javascript
+/* 1.1.4 */
+pattern.hex('#fff')
+["ff", "ff", "ff"]
+
+pattern.rgba('rgba(255, 255, 255, 1)')
+[255, 255, 255, 1]
+
+pattern.p3('#fff') // or 'rgba(255, 255, 255, 1)'
+[1, 1, 1, 1]
+
 /* 1.1.1 */
 pattern.qs('a=1&b=2')
 [["a", 1], ["b", 2]]

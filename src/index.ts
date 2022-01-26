@@ -11,6 +11,9 @@ import creditCard from "./pattern/CreditCard";
 import htmlAttrs from "./pattern/HtmlAttributes";
 import qs from "./pattern/QS";
 import digit from "./pattern/Digit";
+import hex from "./pattern/Hex";
+import rgba from "./pattern/Rgba";
+import p3 from "./pattern/P3";
 
 import Match from "./match";
 
@@ -29,6 +32,9 @@ export const pattern = {
   creditCard,
   qs,
   digit,
+  hex,
+  rgba,
+  p3,
 };
 
 export default {
